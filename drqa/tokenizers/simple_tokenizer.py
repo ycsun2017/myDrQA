@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 
 class SimpleTokenizer(Tokenizer):
-    ALPHA_NUM = r'[\p{L}\p{N}\p{M}]+'
+    ALPHA_NUM = r'[\p{L}\p{N}\p{M}_]+'
     NON_WS = r'[^\p{Z}\p{C}]'
 
     def __init__(self, **kwargs):

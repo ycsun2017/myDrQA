@@ -120,7 +120,7 @@ def process_dataset(data, tokenizer, workers=None):
         ans_tokens = [] #data['answers'][idx]
         if len(data['answers']) > 0:
             for ans in data['answers'][idx]:
-                print(ans)
+#                print(ans)
                 found = find_answer(offsets,
                                     ans['answer_start'],
                                     ans['answer_start'] + len(ans['text']))

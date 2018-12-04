@@ -517,7 +517,7 @@ if __name__ == '__main__':
     add_train_args(parser)
     config.add_model_args(parser)
     args = parser.parse_args()
-    set_defaults(args)
+    args = set_defaults(args)
 
     # Set cuda
     args.cuda = not args.no_cuda and torch.cuda.is_available()
